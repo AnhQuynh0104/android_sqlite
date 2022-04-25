@@ -1,4 +1,4 @@
-package com.example.sqlite.adapter;
+package com.example.sqlite.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
