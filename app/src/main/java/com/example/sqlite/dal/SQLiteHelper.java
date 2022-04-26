@@ -63,4 +63,39 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         return sqLiteDatabase.insert("items", null, values);
     }
+
+    public List<Item> getByDate(String date){
+        List<Item> list = new ArrayList<>();
+        String whereClause = "date like ?";
+        String[] whereArgs = {date};
+        SQLiteDatabase sqLiteDatabase = getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.query("items", null, null, null, null, null, null);
+        while (cursor != null && cursor.moveToNext()){
+            int id = cursor.getInt(0);
+            String title = cursor.getString(1);
+            String category = cursor.getString(2);
+            String price = cursor.getString(3);
+            list.add(new Item(id, title, category, price, date));
+        }
+        return list;
+    }
+
+    public int update(Item i){
+        ContentValues values = new ContentValues();
+        values.put("title", i.getTitle());
+        values.put("category", i.getCategory());
+        values.put("price", i.getPrice());
+        values.put("date", i.getDate());
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        String whereClause = "id=?";
+        String[] whereArgs = {Integer.toString(i.getId())};
+        return sqLiteDatabase.update("items", values, whereClause,whereArgs);
+    }
+
+    public int delete(int id){
+        String whereClause = "id=?";
+        String[] whereArgs = {Integer.toString(id)};
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        return sqLiteDatabase.delete("items", whereClause, whereArgs);
+    }
 }

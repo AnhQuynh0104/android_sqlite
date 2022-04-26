@@ -16,6 +16,14 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tvTong"
+            android:text="Tong"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

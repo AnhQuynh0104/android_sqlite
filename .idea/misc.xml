@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Cac mon/Nam 4 ki 2/Thiet bi di dong/SQLiteDemo/app/src/main/res/layout/activity_add.xml" value="0.264" />
         <entry key="..\:/Cac mon/Nam 4 ki 2/Thiet bi di dong/SQLiteDemo/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Cac mon/Nam 4 ki 2/Thiet bi di dong/SQLiteDemo/app/src/main/res/layout/activity_update_delete.xml" value="0.18802083333333333" />
         <entry key="..\:/Cac mon/Nam 4 ki 2/Thiet bi di dong/SQLiteDemo/app/src/main/res/layout/fragment_history.xml" value="0.358695652173913" />
         <entry key="..\:/Cac mon/Nam 4 ki 2/Thiet bi di dong/SQLiteDemo/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
         <entry key="..\:/Cac mon/Nam 4 ki 2/Thiet bi di dong/SQLiteDemo/app/src/main/res/layout/fragment_search.xml" value="0.358695652173913" />
